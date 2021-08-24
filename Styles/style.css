@@ -5,6 +5,7 @@
 body{
  margin:  0; 
  font-family:  'Raleway' , sans-serif ;
+
 }
 
  a{
@@ -22,22 +23,17 @@ ul{
  padding-inline-start: 0px;
 }
 
+
+
+
+
+/* HEADER*/
 header {
  display:  flex;
  flex-direction: row;
  flex-wrap:  wrap;
  row-gap:  20px;
 }
-
-footer{
- display: flex;
- flex-direction: column;
- background-color: #f2f2f2;
- padding-left: 20px;
- padding-bottom:   150px}
-
-/* HEADER*/
-
     /* --Logo--*/
 
 #logo{
@@ -56,6 +52,7 @@ nav{
 .menu{
  flex-direction: row;
  align-items: flex-end;
+
 }
 
 .item_menu{
@@ -69,9 +66,8 @@ nav{
 
 .item_menu{
  color: #0065FC;
- border-top: 0px solid #0065FC;
- padding-top: 0px;
- padding-bottom: 15px;
+  padding-top: 0px;
+ padding-bottom: 0px;
  width: 100% ;
 }
 
@@ -91,24 +87,173 @@ color: #0065fc;
 font-weight: 800;
 }
 
+/* MAIN PART*/
 
+ .search{
+  padding-left: 20px;
+  }
+
+ h1{
+ margin-top: 30px;
+ margin-bottom: 5px;
+ }
+
+#lieu{
+  padding-bottom: 20px;  
+}
 /* FOOTER*/                    
 
 
-ul{
-flex-direction: column;
- grid-row-gap: 10px;   
- color: black; 
-
+footer{
+ display: flex;
+ flex-direction: column;
+ background-color: #f2f2f2;
+padding: 40px;
 }
 
-div{
+.item_footer{
 
   display: flex;
   flex-direction: column;
+
   
 }
 
+.ul_footer{
+
+flex-direction: column;
+
+}
+
+.ul_footer li{
+    display: flex;
+    text-align: left ;
+    margin-bottom: 10px;
+   
+}
+
+.ul_footer li a{
+    font-size: 0.9em;
+}
+
+/*  tablette */ 
+@media screen and (min-width: 768px){
+ 
+
+footer{
+
+ flex-direction: row;
+ gap: 50px;
+
+}
+
+/* medium desktop*/
+@media screen and (min-width: 992px){
+
+header {
+ 
+justify-content: space-between;
+}
+    /* --Logo--*/
+
+#logo{
+ 
+ align-items: flex-start;
+}
+    
+    /*--Navigation--*/
+
+nav{
+ order: unset;
+ flex: unset;
+ margin-top: 50px;
+ }
+
+.menu{
+ flex-direction: row;
+ align-items: baseline;
+
+}
+
+.item_menu{
+ width: 50%;
+ height: 30px;
+ text-align: center;
+ align-content: center;
+ padding-top: 0px;
+ width: 100% ;
+ padding-right: 50px;
+}
+
+.item_menu{
+ color: #0065FC;
+ border-top: 0px;
+ padding-top: 0px;
+ padding-bottom: 15px;
+ width: 100% ;
+border-bottom: 0px;
+margin-top: 0px;
+
+}
+
+
+.item_menu:hover{
+ border-top: none;
+
+ }                         
+
+/*--Registration*/
+
+#register{
+ align-items: flex-end;
+ padding-right: 76x;
+ padding-top: 50px;
+}
+#register a{
+    color: #0065fc;
+    font-weight: 800;
+}
+
+/* Footer*/
+
+
+footer{
+
+
+gap: 100px;
+
+}
+}
+
+/* large desktop*/
+@media screen and (min-width: 1268px){
+
+
+footer{
+
+
+gap: 200px;
+
+}
+}
+
+   
+  
+
+  
+
+
+  
+    
+  
+  
+    
+
+  
+
+
+
+}
 
 
      
