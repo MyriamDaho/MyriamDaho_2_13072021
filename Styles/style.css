@@ -1,4 +1,4 @@
-                    /* mobile first */
+                /* mobile first */
 
 /* General Settings */
 
@@ -23,7 +23,16 @@
     padding: 20px;}
 
      h2{
+        display: flex;
     font-size: 1.2em;}
+
+     h3{
+            font-size: 1em;
+            padding-right: 40px;
+            margin-top: 10px;
+            margin-bottom: 0px;
+            padding-left: 10px;}
+             
 
     
 /* HEADER */
@@ -88,11 +97,11 @@
             /*-- Main Title--*/
 
               h1{
-                margin-top: 30px;
+                margin-top: 10px;
                 margin-bottom: 5px;
                 font-size: 1.4em;
                 font-weight: 900;
-                padding-right: 60px;} 
+                padding-right: 40px;} 
              
               p{
              margin-bottom: 40px;
@@ -100,11 +109,11 @@
 
             /*-- Search Area--*/
 
-              .search_area{
+             .search_area{
              display: flex;
              height: 50px;
              width: 93%;
-             padding-bottom: 20px;}
+             }
 
               .map{ 
              display: flex;
@@ -117,13 +126,11 @@
              border-radius: 15px 0 0 15px;}
 
               .input_location{
-               height: 48px;
-               width: 100%;
-               font-size: 1.2em;
-               border: 1px solid #f2f2f2;
-               padding-left: 10px;}
-
-              .input_location{
+             height: 48px;
+             width: 100%;
+             font-size: 1.2em;
+             border: 1px solid #f2f2f2;
+             padding-left: 10px;             
              color: black;
              font-weight: 900;
              font-size: 1.2em;
@@ -153,55 +160,255 @@
              align-items: center;}
 
               .research{
-               display: none;}
+             display: none;}
 
             /*-- Filter Area--*/
  
               .filter{
               display:  flex;
               flex-direction: column;
+                padding-top: 0px;}
 
-              }
-
-            .filterBloc{
+              .filterBloc{
               display:  flex;
               flex-direction: row;
               gap: 10px;
               flex-wrap: wrap;
-            }
-           .filterButton{
+              margin-bottom: 18px;}
+
+              .filter-title{
+                display: flex;
+               padding-right: 90px;
+              }
+            
+            .filterButton{
               display:  flex;
               flex-direction: row;
               gap: 10px;
               border-radius: 50px;
               border: #F2F2F2 3px solid;
-              width: fit-content;
-           }
+              width: fit-content;}
+           
             .filterButton :hover{
+              border: #0065fc 3px solid;}
               
-              border: #0065fc 3px solid;
-              
-           }
-           .filterIcon{
-            display : flex;
-            justify-content: center;
-            align-items: center;
-               border-radius: 50px;
-              background-color: rgb(222, 235, 255);
-              width: 50px;
-              height: 50px;
-           }
+            .filterIcon{
+             display : flex;
+             justify-content: center;
+             align-items: center;
+             border-radius: 50px;
+             background-color: rgb(222, 235, 255);
+             width: 50px;
+             height: 50px;}
+           
            .filterIcon i {color: #0065fc;}
+
            .filterText{
             display : flex;
             justify-content: center;
             align-items: center;
             color: #000000;
             padding-right: 20px;
-            font-weight: 700;
-           }
+            font-weight: 700;}
+
+           .infoIcon{         
+            float: left;
+            margin-right: 12px;
+             border: #F2F2F2 2px solid;   
+             border-radius: 80%;
+             font-size: 0.8em;
+            padding: 3px 9px;             
+             }       
+
+            .infoIcon i {
+            color: #0065fc;
+            font-size: 12px;
+            font-weight: 15px;}
+           
+            .infotext{
+            margin-bottom: 15px;}
+           
 
 
+
+/* ASIDE AREA*/   
+                
+            
+              /*-- Container et titre--*/
+            
+
+            .popular_area{
+             display: flex;
+             flex-direction: column;
+             justify-content: flex-start;
+             background-color: #f2f2f2;
+             height: 550px;
+             padding:30px;}
+
+            .en-tête{
+             display: flex;
+             justify-content:space-between;
+             align-items: baseline;
+             margin-bottom: 7px;}
+                  
+            .en-tête i{
+             display: flex;
+             justify-content: flex-end;
+             font-size:20px;}
+    
+            /*-- Cartes d'hébergements populaires--*/
+
+            .popular_container{
+             display: flex;
+             flex-direction: column;
+             width: 330px;
+             height: 140px;                           
+             background-color:white;
+             padding: 5px;
+             border-radius: 20px;
+             margin-top: 15px;}
+            
+            .room{
+             width: 125px;
+             height: 140px;
+             object-fit: cover;
+             float: left;
+             border-radius: 15px 0 0 15px;
+             padding-right: 20px;}
+                     
+            .tarif1{
+            font-size: 0.9em;
+            font-weight: 500;
+            margin-top: 5px;
+            padding-left: 10px;}
+         
+           .V-stars{
+           font-size: 0.7em;
+           color: #0065fc;
+            padding-left: 10px;
+            padding-top: 8px;}
+   
+           .I-star{
+           display: inline-block;
+           font-size: 1em; 
+           color: rgb(217, 217, 217);}
+
+
+
+/*MAIN*/
+
+
+            /*-- cartes d'hébergements--*/    
+
+            .lodging_area{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            background-color: white;
+            
+            padding: 20px 20px 0px 20px;}
+
+            .hostel_container{
+            display: flex;
+            flex-direction: row;
+            height: 190px; 
+            width: 100%;                          
+            background-color:white;
+            padding: 5px;
+            border-radius: 20px;
+            margin-top: 15px;
+            box-shadow: 3px 3px 20px  10px #f2f2f2;}
+            
+            .Room{
+            width: 325px;
+            height: 110px;
+            object-fit: cover;
+            border-radius: 15px 15px 0 0;}                         
+        
+             .tarif2{
+            font-size: 0.9em;
+            font-weight: 500;
+            margin-top: 5px;
+            margin-bottom: 0px;
+            padding-left: 10px;}
+        
+            .I-star{
+            display: inline-block;
+            font-size: 1em; 
+            color: rgb(217, 217, 217);}
+
+       
+            /*-- afficher plus--*/
+
+            .more{
+            display: flex;
+            margin-top:30px;
+            margin-bottom: 5px;}
+
+            
+            /*-- Cartes d'activités--*/
+
+            .activity_area{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            background-color: white;
+           
+            padding: 20px 20px 30px 20px;}
+
+            .h-1{
+            margin-top: 29px;
+            margin-bottom: 30px;
+            font-size: 1.4em;
+            font-weight: 900;
+            padding-right: 40px;}
+            
+            .activity-elements{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+
+             
+             .activity_container{
+            display: flex;
+            flex-direction: column;
+            height: 185px;                           
+            background-color:white;
+            border-radius: 20px;          
+            box-shadow: 3px 3px 20px  10px #f2f2f2;
+            margin-bottom: 10px;
+            }
+            .pics{
+            width: 100%;
+            height:75%;
+            object-fit: cover;
+            border-radius: 15px 15px 0 0;
+            display: flex;
+            }
+
+            
+              .pics > img{
+                object-fit: cover;
+                border-radius: 15px 15px 0 0;
+           width: 100%;
+          } 
+           
+             .h-3{
+                height: 25%;
+                padding: 4px 0 0 20px;}
+           
+            .activity_container2{
+            display: flex;
+            flex-direction: column;
+            height: 185px;                           
+            background-color:white;
+            border-radius: 20px;          
+            box-shadow: 3px 3px 20px  10px #f2f2f2;
+            margin-bottom: 20px;}
+          
+
+ 
 /* FOOTER */                    
 
  footer{
@@ -222,6 +429,7 @@
 .ul_footer{
 
 flex-direction: column;
+font-size: larger;
 
 }
 
@@ -236,7 +444,10 @@ flex-direction: column;
     font-size: 0.9em;
 }
 
-/*  tablette */ 
+
+            /* RESPONSIVE*/
+
+/** tablette **/ 
 @media screen and (min-width: 768px){
  
 
@@ -247,7 +458,7 @@ footer{
 
 }
 
-/* medium desktop*/
+                /** MEDIUM DESKTOP**/
 @media screen and (min-width: 992px){
 
 body{
@@ -258,7 +469,7 @@ header {
  
 justify-content: space-between;
 }
-    /* --Logo--*/
+                        /* --Logo--*/
 
 #logo{
  
@@ -272,7 +483,7 @@ justify-content: space-between;
  }
 
     
-    /*--Navigation--*/
+                     /*--Navigation--*/
 
 nav{
  order: unset;
@@ -301,7 +512,7 @@ nav{
     }
 
 
-/*--Registration*/
+                /*--Registration*/
 
 #register{
  align-items: flex-end;
@@ -347,14 +558,216 @@ nav{
             }
 
                 
-               
+           /*-- Filter Area--*/
+ 
+            
+              
+                
+               .filter-title{
+                
+              margin-right: 5px;
+              padding-right: 0px;
+
+              }
+
+                
+            
+             
+               .filterBloc{
+              
+              gap: 28px;
+              flex-wrap: nowrap;
+              margin-bottom: 18px;
+              justify-content: center;}
+            
+            .filterButton{
+              
+              height: fit-content;}
            
+            .filterButton :hover{
+              border: #0065fc 3px solid;}
+              
+            .filterIcon{
+             display : flex;
+             justify-content: center;
+             align-items: center;
+             border-radius: 50px;
+             background-color: rgb(222, 235, 255);
+             width: 50px;
+             height: 50px;}
+           
+           .filterIcon i {color: #0065fc;}
+
+           .filterText{
+            display : flex;
+            justify-content: center;
+            align-items: center;
+            color: #000000;
+            padding-right: 20px;
+            font-weight: 700;}
+
+           .infoIcon{         
+            float: left;
+            margin-right: 12px;
+             border: #F2F2F2 2px solid;   
+             border-radius: 80%;
+             font-size: 0.8em;
+            padding: 3px 9px;             
+             }       
+
+            .infoIcon i {
+            color: #0065fc;
+            font-size: 12px;
+            font-weight: 15px;}
+            .infotext{
+            margin-bottom: 15px;}
+                       
+ .central-part{
+    display: flex;
+    flex-flow: row-reverse;
+}         
+
+/* ASIDE AREA*/   
+                
+            
+              /*-- Container et titre--*/
+
+
+             .popular_area{
+                        
+             justify-content: flex-end;
+             align-items: flex-end;
+             margin-right: 40px;
+             border-radius: 20px;
+             width: 20%;
+             }                                                   
+                          
+            .en-tête{
+             display: flex;
+             justify-content:space-between;
+             align-items: baseline;
+             margin-bottom: 7px;}
+                  
+            .en-tête i{
+             display: flex;
+             justify-content: flex-end;
+             font-size:20px;}
+    
+            /*-- Cartes d'hébergements populaires--*/
+
+            .popular_container{
+             display: flex;
+             flex-direction: column;
+             width: 330px;
+             height: 140px;                           
+             background-color:white;
+             padding: 5px;
+             border-radius: 20px;
+             margin-top: 15px;}
+            
+            .room{
+             width: 125px;
+             height: 140px;
+             object-fit: cover;
+             float: left;
+             border-radius: 15px 0 0 15px;
+             padding-right: 20px;}
+                     
+            .tarif1{
+            font-size: 0.9em;
+            font-weight: 500;
+            margin-top: 5px;
+            padding-left: 10px;}
+         
+           .V-stars{
+           font-size: 0.7em;
+           color: #0065fc;
+            padding-left: 10px;
+            padding-top: 8px;}
+   
+           .I-star{
+           display: inline-block;
+           font-size: 1em; 
+           color: rgb(217, 217, 217);}
 
 
 
+.lodging_area{
+            
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            background-color: #F2F2F2;
+            border-radius: 20px;
+            margin-right: 40px;
+            margin-left: 30px;
+            width: 80%;
+            padding-left: 35px;
+            padding-right: 0px;}
+            
+     #lodging-title{
+        display: flex;
+        margin-bottom: 15px;
+         }    
+
+             .hostel_container{
+                      
+              width:25%;
+           margin-right: 20px}
+                           
+            
+            
+            .pics{
+                height: 80%;
+                width: 100%;
+            }
+                                    
+        
+h3{
+            font-size: 1em;
+            padding-right: 40px;
+            margin-top: 10px;
+            margin-bottom: 0px;
+            padding-left: 10px;}
+             
 
 
+             .tarif2{
+            font-size: 0.9em;
+            font-weight: 500;
+            margin-top: 5px;
+            margin-bottom: 0px;
+            padding-left: 10px;}
+        
+            .I-star{
+            display: inline-block;
+            font-size: 1em; 
+            color: rgb(217, 217, 217);}
 
+       
+
+
+             /*-- Cartes d'activités--*/
+
+           
+        .activity-elements{
+             flex-direction: row;
+        }
+
+            .activity_container{
+           
+            height: 400px;                           
+         }
+            
+            .pics{
+            height: 80%;
+          }
+
+            
+           
+             .h-3{
+                height: 20%;
+             }
 
 
 
@@ -392,6 +805,10 @@ gap: 200px;
   
   
     
+
+
+
+
 
   
 
