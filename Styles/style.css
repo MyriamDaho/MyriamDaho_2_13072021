@@ -20,7 +20,7 @@
     padding-inline-start: 0px;}
 
     section{
-    padding: 30px;}
+    padding: 40px;}
 
     h2{
     display: flex;
@@ -83,7 +83,7 @@
                     /*--Registration--*/
 
                     #register{
-                    padding-right: 25px;
+                    padding-right: 40px;
                     padding-top: 50px;}
 
                     #register a{    
@@ -246,7 +246,7 @@
                     flex-direction: column;
                     justify-content: center;
                     background-color: #f2f2f2;
-                    padding:30px;
+                    padding:20px;
                     gap: 15px;}
 
                     .en-tête{
@@ -269,7 +269,11 @@
                     border-radius: 20px;
                     box-shadow: 3px 3px 20px  10px #f2f2f2;
                     padding: 5px;}
-                              
+
+                    .popular_container:hover{
+                    transform: scale(1.05);
+                    transition: 0.4s;}
+                                              
                     .room{
                     display: flex;
                     width: 40%;
@@ -326,6 +330,10 @@
                     border-radius: 20px;
                     box-shadow: 3px 3px 20px  10px #f2f2f2;}
             
+                    .hostel_container:hover{
+                    transform: scale(1.05);
+                    transition: 0.4s;}
+                  
                     .pic{
                     display: flex;                    
                     height: 55%;
@@ -395,6 +403,10 @@
                     box-shadow: 3px 3px 20px  10px #f2f2f2;
                     margin-bottom: 20px;}
           
+                    .activity_container:hover{
+                    transform: scale(1.05);
+                    transition: 0.4s;}
+                  
                     .pics{
                     width: 100%;
                     height:75%;
@@ -419,6 +431,11 @@
                     border-radius: 20px;          
                     box-shadow: 3px 3px 20px  10px #f2f2f2;
                     margin-bottom: 20px;}
+
+                    .activity_container2:hover{
+                    transform: scale(1.05);
+                    transition: 0.4s;}
+
           
 
  
@@ -429,7 +446,7 @@
     display: flex;
     flex-direction: column;
     background-color: #f2f2f2;
-    padding: 20px;}
+    padding: 40px;}
 
     .item_footer{
     display: flex;
