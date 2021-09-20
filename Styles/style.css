@@ -65,16 +65,13 @@
                     
                   
                     .item_menu{
-                    width: 50%;
                     height: 30px;
                     text-align: center;
-                    align-content: center;
-                    padding-top: 0px;
-                    width: 100% ;
-                    color: #0065FC;
+                    align-content: center;                                                          
                     padding-top: 0px;
                     padding-bottom: 0px;
-                    width: 100% ;}
+                    width: 100% ;
+                    border-bottom: 3px solid #f2f2f2;}
 
                     .item_menu:hover{
                     border-bottom: 3px solid #0065fc;}                    
@@ -173,7 +170,7 @@
                    .filterBloc{
                    display:  flex;
                    flex-direction: row;
-                   gap: 10px;
+                   gap: 20px;
                    flex-wrap: wrap;
                    margin-bottom: 18px;}
 
@@ -187,11 +184,16 @@
                    gap: 10px;
                    border-radius: 50px;
                    border: #F2F2F2 3px solid;
-                   width: fit-content;}
-           
-                   .filterButton :hover{
-                   border: #0065fc 3px solid;}
-              
+                   width: fit-content;
+                   background: #ffffff;}                
+                                  
+                   .filterButton:hover{
+                    background: #0053fc52;
+                    transform: scale(1.2);
+                    transition: 0.5s;
+                   }
+                                                   
+                 
                    .filterIcon{
                    display : flex;
                    justify-content: center;
@@ -200,6 +202,9 @@
                    background-color: rgb(222, 235, 255);
                    width: 50px;
                    height: 50px;}
+
+                   
+                   
            
                    .filterIcon i {color: #0065fc;}
 
@@ -210,7 +215,7 @@
                    color: #000000;
                    padding-right: 20px;
                    font-weight: 700;}
-
+                                            
                    .infoIcon{         
                    float: left;
                    margin-right: 12px;
@@ -367,8 +372,8 @@
                     display: flex;
                     flex-direction: column;
                     justify-content: flex-start;
-                    background-color: white;                    
-                    padding: 20px 20px 30px 20px;}
+                    background-color: white;}                  
+                   
 
                     .h-1{
                     margin-bottom: 30px;
@@ -388,7 +393,7 @@
                     background-color:white;
                     border-radius: 20px;          
                     box-shadow: 3px 3px 20px  10px #f2f2f2;
-                    margin-bottom: 10px;}
+                    margin-bottom: 20px;}
           
                     .pics{
                     width: 100%;
@@ -428,7 +433,8 @@
 
     .item_footer{
     display: flex;
-    flex-direction: column;}
+    flex-direction: column;
+    margin-right:40px}
 
     .ul_footer{
     flex-direction: column;
@@ -519,14 +525,19 @@
                     /*-- Cartes d'activités--*/
 
                     .activity-elements{
-                    flex-direction: row;}
+                    flex-direction: row;
+                    gap: 20px;}
                               
                     .activity_container{
-                    width: 20%;
+                    width: 25%;
                     height:unset;}                        
-                                                        
+                         
+                      .deux-card{
+                         width: 25%;
+                    }
+
                     .h-3{
-                    height: 25%;
+                    height: 15%;
                     padding: 4px 0 0 10px;}         
       
        
@@ -582,9 +593,13 @@
                 padding-top: 60px;}
  
             
+.activity_container{
+    width: 30%;}
+
+                  
+          
+
 }
-
-
   
                 /**LARGE DESKTOP**/
 
@@ -680,8 +695,7 @@ margin-right: 40px;}
                height: 400px; 
                width: 30%;  }                      
                        
-               .deux-card{
-               width: 30%;}
+              
 
                .activity_container2{
                padding-bottom: 5px;}
