@@ -146,7 +146,6 @@
                    width: 60px;
                    height: 52px;
                    background-color: #0065fc;
-                   padding-bottom: 3px 3px;
                    border-radius: 17px 17px 17px 17px;
                    color: white;}
 
@@ -226,8 +225,8 @@
                  
                    .infoIcon i {
                    color: #0065fc;
-                   font-size: 12px;
-                   font-weight: 15px;}
+                   font-size: 12px;}
+                   
            
                    .infotext{
                    margin-bottom: 15px;}
